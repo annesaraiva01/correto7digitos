@@ -3,8 +3,8 @@ import {
   AbsoluteFill, Audio, Img, OffthreadVideo,
   Sequence, useCurrentFrame, useVideoConfig,
 } from "remotion";
-import { useCaptionFont } from "./font-utils";
-import type { CaptionSegment, CaptionStyle, RenderInputProps } from "./types";
+import { useCaptionFont } from "./font-utils.js";
+import type { CaptionSegment, CaptionStyle, RenderInputProps } from "./types.js";
 
 const DEFAULT_CAPTION_STYLE: CaptionStyle = {
   fontFamily: "'Montserrat', sans-serif",
