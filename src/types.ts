@@ -37,7 +37,7 @@ export interface VideoFormatConfig {
   height: number;
 }
 
-export interface RenderInputProps {
+export interface RenderInputProps extends Record<string, unknown> {
   audioUrl: string;
   slides: BRollSlide[];
   captions?: CaptionSegment[];
