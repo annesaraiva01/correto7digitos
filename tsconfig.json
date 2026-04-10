@@ -1,14 +1,15 @@
 {
   "compilerOptions": {
     "target": "ES2022",
-    "module": "Preserve",
-    "jsx": "react-jsx",
-    "moduleResolution": "bundler",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "rootDir": "src",
+    "outDir": "dist",
+    "types": ["node"],
+    "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
-    "noEmit": true,
-    "strict": false,
-    "outDir": "dist"
+    "resolveJsonModule": true
   },
-  "include": ["src"]
+  "include": ["src/**/*.ts"]
 }
