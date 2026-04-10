@@ -13,10 +13,12 @@ ENV CHROME_PATH=/usr/bin/chromium
 WORKDIR /app
 
 COPY package.json ./
-RUN npm install --omit=dev
+RUN npm install
 
 COPY . .
 
+RUN npx tsc
+
 EXPOSE 3000
 
-CMD ["node", "src/server.js"]
+CMD ["node", "dist/server.js"]
