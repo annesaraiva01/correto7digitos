@@ -1,7 +1,7 @@
 import React from "react";
 import { Composition } from "remotion";
-import { calculateMetadata, FacelessVideo } from "./FacelessVideo";
-import type { RenderInputProps } from "./types";
+import { calculateMetadata, FacelessVideo } from "./FacelessVideo.js";
+import type { RenderInputProps } from "./types.js";
 
 const defaultProps: RenderInputProps = {
   audioUrl: "",
